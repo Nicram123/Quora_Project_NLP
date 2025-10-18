@@ -24,12 +24,9 @@ The project has three main parts:
 In this phase, I explored the text dataset containing pairs of questions.  
 The preprocessing pipeline included:
 
-- Lowercasing and punctuation removal (`string.punctuation`)  
+- counts the number of char such like string.ascii_lowercase + string.punctuation + string.digits 
 - Tokenization using TensorFlow / Keras **Tokenizer**  
-- Padding sequences to a fixed length using `pad_sequences()`  
 - Optional vectorization using **TF-IDF**  
-
-This ensured uniform input shapes for the neural model and reduced noise in the textual data.
 
 ### Example visualizations (placeholders):
 
